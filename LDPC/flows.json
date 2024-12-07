@@ -1,0 +1,82 @@
+[
+    {
+        "id": "dbf9d5a8.eeb7d8",
+        "type": "ui_form",
+        "z": "f6f2187d.f17ca8",
+        "name": "Set Feeding Schedule",
+        "label": "Feeding Schedule",
+        "group": "97c3e6b181dfef84",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Hour 1 (0-23)",
+                "value": "hour1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Minute 1 (0-59)",
+                "value": "minute1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Hour 2 (0-23)",
+                "value": "hour2",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Minute 2 (0-59)",
+                "value": "minute2",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "hour1": "",
+            "minute1": "",
+            "hour2": "",
+            "minute2": ""
+        },
+        "payload": "",
+        "submit": "Set Auto Feed TImes",
+        "cancel": "",
+        "topic": "petfeeder/schedule",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 280,
+        "y": 640,
+        "wires": [
+            [
+                "746f0246.fbe3b8"
+            ]
+        ]
+    },
+    {
+        "id": "97c3e6b181dfef84",
+        "type": "ui_group",
+        "name": "LDPC Master-Control",
+        "tab": "3d51c892cbb5028d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3d51c892cbb5028d",
+        "type": "ui_tab",
+        "name": "LDPC DASHBOARD",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
